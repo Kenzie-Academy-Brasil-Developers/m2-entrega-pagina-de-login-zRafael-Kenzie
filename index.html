@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+    <div class='informacoes'>
+        <img class='logo' src="src/assets/061c03_64c3a20753a248c296b88fce026ddbf1_mv2.png" alt="">
+        <p>A sua compania de viagem</p>
+    </div>
+    <div class="logindiv">
+        <h2>Login</h2>
+    <form action="">   
+        <label for="email">Email</label>
+        <input type="email" name='email' placeholder="digite seu email">
+        <label for="esnha">Senha</label>
+        <input type="senha" name='senha' placeholder="digite sua senha">
+       <span>Esqueceu sua senha? <span id='modal'>Clique aqui</span></span>
+        <button class="login" type="submit">Entrar</button>
+    </form>
+</div>
+</main>
+<div class="modal hidden">
+    <div class="modal-signup">
+        <div class="modal-header">
+            <h2 class="signup">Recuperar Senha</h2>
+        </div>
+        <div class="modal-body">
+            <p> Para recuperar sua senha digite seu email cadastrado</p>
+            <input type="text" placeholder="Insira aqui o seu e-mail">
+            <button class="send-email">Enviar
+            </button><button data-control-modal="close-modal" id="modalBtn">Voltar</button>
+        </div>
+    </div>
+</div>
+
+<script src="src/script/modal.js"></script>
+</body>
+
+</html>
